@@ -1562,6 +1562,21 @@ class Blackcoin(ScryptMixin, Coin):
     TX_PER_BLOCK = 3
     RPC_PORT = 15715
     REORG_LIMIT = 5000
+    
+class SynchrotronCoin(ScryptMixin, Coin):
+    NAME = "SynchrotronCoin"
+    SHORTNAME = "STC"
+    NET = "mainnet"
+    P2PKH_VERBYTE = bytes.fromhex("7D")
+    P2SH_VERBYTES = [bytes.fromhex("55")]
+    WIF_BYTE = bytes.fromhex("99")
+    GENESIS_HASH = ('000001faef2500000c10a3ad77caa09e1dcefdf5643caa4eb8ab2d22d5f672076617ba1011b7dec4fbcf906e6242621d')
+    DAEMON = daemon.LegacyRPCDaemon
+    TX_COUNT = 4594999
+    TX_COUNT_HEIGHT = 1667070
+    TX_PER_BLOCK = 3
+    RPC_PORT = 22223
+    REORG_LIMIT = 5000
 
 
 class Bitbay(ScryptMixin, Coin):
