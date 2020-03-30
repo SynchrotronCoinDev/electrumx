@@ -1570,7 +1570,8 @@ class SynchrotronCoin(ScryptMixin, Coin):
     P2PKH_VERBYTE = bytes.fromhex("7D")
     P2SH_VERBYTES = [bytes.fromhex("55")]
     WIF_BYTE = bytes.fromhex("99")
-    GENESIS_HASH = ('000001faef2500000c10a3ad77caa09e1dcefdf5643caa4eb8ab2d22d5f672076617ba1011b7dec4fbcf906e6242621d')
+    GENESIS_HASH = ('00000c10a3ad77caa09e1dcefdf5643c'
+                    'aa4eb8ab2d22d5f672076617ba1011b7')
     DAEMON = daemon.LegacyRPCDaemon
     TX_COUNT = 4594999
     TX_COUNT_HEIGHT = 1667070
